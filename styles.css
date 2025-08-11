@@ -1,11 +1,11 @@
-/* Réinitialisation des styles par défaut */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corps de la page */
+/* Body */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* En-tête */
+/* Header */
 header {
     background-color: #4CAF50;
     color: #FFFFFF;
@@ -22,8 +22,10 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
-    font-family: 'Courier New', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 /* Navigation */
@@ -43,7 +45,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Section principale */
+/* Main section */
 main {
     padding: 50px 20px;
     text-align: center;
@@ -89,10 +91,10 @@ form button {
 }
 
 form button:hover {
-    background-color: #FFEB3B;
+    background-color: #FDD835;
 }
 
-/* Pied de page */
+/* Footer */
 footer {
     background-color: #4CAF50;
     color: #FFFFFF;
@@ -102,3 +104,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
