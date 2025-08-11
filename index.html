@@ -1,106 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MissPronostics - Abonnement Paris Sportifs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<img 
-  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tennis_Ball_icon.svg/1200px-Tennis_Ball_icon.svg.png" 
-  alt="Balle de tennis" 
-  class="tennis-ball" 
-/>
-
-    <body>
-    <header>
-        <h1>MissPronostics</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Abonnement Paris Sportifs</h2>
-            <p>Recevez nos conseils exclusifs chaque semaine</p>
-            <form action="#" method="POST">
-                <input type="text" name="nom" placeholder="Nom complet" required />
-                <input type="email" name="email" placeholder="Adresse email" required />
-                <button type="submit">S'abonner</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 MissPronostics | Tous droits réservés</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Balle de tennis animée réaliste</title>
-<style>
-  body {
-    height: 100vh;
-    margin: 0;
-    background: #d4f1c5; /* vert clair rappelant un court */
-    overflow: hidden;
-    position: relative;
-  }
-
-  .tennis-ball {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: radial-gradient(circle at 30% 30%, #fff966, #f0db4f 60%, #d4c837 90%);
-    border-radius: 50%;
-    box-shadow: inset 3px 3px 6px #c7b830;
-    left: 20px;
-    bottom: 20px;
-    animation: bounce 3s ease-in-out infinite;
-  }
-
-  /* Traits blancs de la balle */
-  .tennis-ball::before,
-  .tennis-ball::after {
-    content: "";
-    position: absolute;
-    border: 3px solid white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    top: 5px;
-    left: 5px;
-    box-sizing: border-box;
-  }
-
-  .tennis-ball::after {
-    border-color: transparent transparent white white;
-    transform: rotate(45deg);
-  }
-
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MissPronostics - Abonnement Paris Sportifs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Fond vert clair pour rappeler le terrain */
+    body {
+      margin: 0;
+      background: #d4f1c5;
+      font-family: 'Roboto', sans-serif;
+      position: relative;
+      min-height: 100vh;
     }
-    50% {
-      transform: translateY(-100px);
-      box-shadow: 0 15px 20px rgba(0,0,0,0.5);
+
+    /* Animation de la balle */
+    .tennis-ball {
+      position: fixed; /* fixe sur la page, visible même au scroll */
+      width: 80px;
+      height: 80px;
+      left: 20px;
+      bottom: 20px;
+      animation: bounce 3s ease-in-out infinite;
+      z-index: 9999;
     }
-  }
-</style>
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+        filter: drop-shadow(0 5px 3px rgba(0,0,0,0.3));
+      }
+      50% {
+        transform: translateY(-120px);
+        filter: drop-shadow(0 15px 10px rgba(0,0,0,0.5));
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="tennis-ball"></div>
+
+  <!-- Balle de tennis animée -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tennis_Ball_icon.svg/1200px-Tennis_Ball_icon.svg.png"
+    alt="Balle de tennis"
+    class="tennis-ball"
+  />
+
+  <header>
+    <h1>MissPronostics</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Abonnement Paris Sportifs</h2>
+      <p>Recevez nos conseils exclusifs chaque semaine</p>
+      <form action="#" method="POST">
+        <input type="text" name="nom" placeholder="Nom complet" required />
+        <input type="email" name="email" placeholder="Adresse email" required />
+        <button type="submit">S'abonner</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MissPronostics | Tous droits réservés</p>
+  </footer>
+
 </body>
 </html>
+
