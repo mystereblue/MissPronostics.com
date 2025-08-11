@@ -1,121 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MissPronostics - Abonnement Paris Sportifs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<title>Test balle tennis</title>
+<style>
+  .tennis-ball {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    bottom: 20px;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>MissPronostics</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Abonnement Paris Sportifs</h2>
-            <p>Recevez nos conseils exclusifs chaque semaine</p>
-            <form action="#" method="POST">
-                <input type="text" name="nom" placeholder="Nom complet" required />
-                <input type="email" name="email" placeholder="Adresse email" required />
-                <button type="submit">S'abonner</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 MissPronostics | Tous droits réservés</p>
-    </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MissPronostics - Abonnement Paris Sportifs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Fond vert clair pour rappeler le terrain */
-    body {
-      margin: 0;
-      background: #d4f1c5;
-      font-family: 'Roboto', sans-serif;
-      position: relative;
-      min-height: 100vh;
-    }
-
-    /* Animation de la balle */
-    .tennis-ball {
-      position: fixed; /* fixe sur la page, visible même au scroll */
-      width: 80px;
-      height: 80px;
-      left: 20px;
-      bottom: 20px;
-      animation: bounce 3s ease-in-out infinite;
-      z-index: 9999;
-    }
-
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-        filter: drop-shadow(0 5px 3px rgba(0,0,0,0.3));
-      }
-      50% {
-        transform: translateY(-120px);
-        filter: drop-shadow(0 15px 10px rgba(0,0,0,0.5));
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Balle de tennis animée -->
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tennis_Ball_icon.svg/1200px-Tennis_Ball_icon.svg.png"
-    alt="Balle de tennis"
-    class="tennis-ball"
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tennis_Ball_icon.svg/1200px-Tennis_Ball_icon.svg.png" 
+    alt="Balle de tennis" 
+    class="tennis-ball" 
   />
-
-  <header>
-    <h1>MissPronostics</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Abonnement Paris Sportifs</h2>
-      <p>Recevez nos conseils exclusifs chaque semaine</p>
-      <form action="#" method="POST">
-        <input type="text" name="nom" placeholder="Nom complet" required />
-        <input type="email" name="email" placeholder="Adresse email" required />
-        <button type="submit">S'abonner</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 MissPronostics | Tous droits réservés</p>
-  </footer>
-
 </body>
 </html>
-
-
-
